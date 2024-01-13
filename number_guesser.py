@@ -4,9 +4,10 @@ print("type quit to save and leave")
 import sys
 import time
 import random
+import pickle
 from random import randrange
 # streak
-streak = 0
+streak = pickle.load(open("streak.p", "rb"))
 # loop
 
 looper = True
@@ -33,6 +34,7 @@ while looper == True:
      streak += 1
      time.sleep(1)
   elif guess_int == str(quit):
+    pickle.dump()
     sys.exit()
   else:
      print("wrong")
@@ -42,3 +44,4 @@ while looper == True:
    sys.exit()
  else:
    print("epic fail: input was not quit OR a number")
+ pickle.dump(streak, open("streak.p", "wb"))  
