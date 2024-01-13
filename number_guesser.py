@@ -33,9 +33,6 @@ while looper == True:
      print("correct")
      streak += 1
      time.sleep(1)
-  elif guess_int == str(quit):
-    pickle.dump()
-    sys.exit()
   else:
      print("wrong")
      streak = 0
