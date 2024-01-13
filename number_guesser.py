@@ -20,7 +20,7 @@ while looper == True:
  is_int = False
  print(num, "+", num2, "=")
  guess = input("type answer here: ")
- # see if guess is correct
+ # see if guess is quit or number
  try:
     guess_int = int(guess)
     is_int = True
@@ -40,3 +40,5 @@ while looper == True:
      time.sleep(1)
  elif guess == "quit":
    sys.exit()
+ else:
+   print("epic fail: input was not quit OR a number")
