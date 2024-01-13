@@ -28,11 +28,11 @@ while looper == True:
     is_int = False
  if is_int:
 
-  if guess == correct:
+  if guess_int == correct:
      print("correct")
      streak += 1
      time.sleep(1)
-  elif guess == str(quit):
+  elif guess_int == str(quit):
     sys.exit()
   else:
      print("wrong")
