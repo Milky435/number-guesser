@@ -1,4 +1,4 @@
 a simple number guesser
 
 how to update:
-move the exe and internal folder and keep the streak.p
+remove the current exe and internal folder and then move the new version of them, keep the streak.p to keep your streak
