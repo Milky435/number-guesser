@@ -7,7 +7,12 @@ import random
 import pickle
 from random import randrange
 # streak
-streak = pickle.load(open("streak.p", "rb"))
+try:
+ streak = pickle.load(open("streak.p", "rb"))
+except:
+  print("ERROR: streak.p not found try backup?")
+  time.sleep(10)
+  sys.quit
 # loop
 
 looper = True
