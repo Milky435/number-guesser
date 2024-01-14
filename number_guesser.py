@@ -43,6 +43,8 @@ while looper == True:
      streak = 0
      time.sleep(1)
  elif guess == "quit":
+   print("quitting...")
+   time.sleep(0.5)
    sys.exit()
  else:
    print("epic fail: input was not quit OR a number")
